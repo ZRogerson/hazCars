@@ -1,0 +1,10 @@
+.filters {
+    width: 18%;
+}
+
+@media (max-width: 760px) {
+    .filters {
+        width: 100%;
+        text-align: center;
+    }
+}

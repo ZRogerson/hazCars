@@ -1,0 +1,51 @@
+.color-picker h4 {
+    margin: 0 0 10px;
+}
+
+.colors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.colors>div {
+    font-size: 0.8em;
+    border: 1px solid #2E4172;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.colors>div:hover span {
+    transform: translateY(-1px);
+}
+
+.colors>div:active span {
+    transform: translateY(1px);
+}
+
+.colors .selected {
+    background: black;
+    color: white;
+}
+
+.colors span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #2E4172;
+}
+
+.colors p {
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 760px) {
+    .colors {
+        justify-content: space-around;
+    }
+}

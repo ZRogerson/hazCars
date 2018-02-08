@@ -1,0 +1,14 @@
+.sort-wrapper {}
+
+.sort-wrapper select {
+    padding: 5px 5px 4px;
+    border-radius: 3px;
+    border: 1px solid #2E4172;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 760px) {
+    .sort-wrapper select {
+        font-size: 0.8rem;
+    }
+}

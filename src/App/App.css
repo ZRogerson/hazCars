@@ -1,0 +1,53 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.App-header {
+    position: relative;
+    width: 1200px;
+    color: white;
+    text-align: center;
+}
+
+.App-header img {
+    width: 100%;
+}
+
+.App-header h1 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 0 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 5vw;
+}
+
+.App>main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+@media (max-width: 1200px) {
+    .App-header {
+        width: 100%;
+    }
+    .App>main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 760px) {
+    .App-header h1 {
+        font-size: 8vw;
+    }
+    .App>main {
+        width: 100%;
+        flex-direction: column;
+    }
+}

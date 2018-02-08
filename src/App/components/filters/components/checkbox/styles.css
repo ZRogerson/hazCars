@@ -1,0 +1,28 @@
+.checkbox-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin: 5px 0;
+    border-bottom: 1px solid #2E4172;
+}
+
+.checkbox-wrapper input[type=checkbox] {
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 760px) {
+    .checkbox-wrapper {
+        padding: 0 10px;
+    }
+
+    .checkbox-wrapper input[type=checkbox] {
+        float: right;
+        width: 30px;
+        height: 30px;
+    }
+}

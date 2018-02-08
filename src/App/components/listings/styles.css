@@ -1,0 +1,33 @@
+.listings {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.listings header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listings h1 { margin: 0; }
+
+.empty {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: red;
+}
+
+@media (max-width: 760px) {
+    .listings {
+        width: 100%;
+        align-items: center;
+    }
+
+    .listings header {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
